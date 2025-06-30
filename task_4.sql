@@ -1,10 +1,7 @@
 USE alx_book_store;
 SELECT 
     COLUMN_NAME AS Field,
-    DATA_TYPE AS Type,
-    IF(CHARACTER_MAXIMUM_LENGTH IS NOT NULL, 
-       CONCAT(DATA_TYPE, '(', CHARACTER_MAXIMUM_LENGTH, ')'), 
-       DATA_TYPE) AS Type_Length,
+    COLUMN_TYPE AS Type,
     IS_NULLABLE AS Null,
     COLUMN_KEY AS Key,
     EXTRA AS Extra
